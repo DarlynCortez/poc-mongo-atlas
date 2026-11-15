@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8686dde2-44b9-43d9-bfcd-c6594fc637a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/app/PruebaConexionFirestore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/app/PruebaFirestore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/datos/ConexionFirestore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/datos/FirestoreProductoRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/app/PruebaConexionPostgres.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/datos/ConexionPostgres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/edu/utec/datos/RepositorioException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/edu/utec/datos/RepositorioException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +26,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DarlynCortez"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DarlynCortez&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/DarlynCortez/poc-mongo-atlas.git",
-    "accountId": "13a7673b-7375-486b-8ffc-f77c190e23de"
+    "accountId": "ae8178e0-496b-4f2f-8f30-328f81f67cff"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3LpSJMO91ocwiOUzLzZwjbUYV0I" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,6 +49,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.PruebaConexionFirestore.executor": "Run",
+    "Application.PruebaConexionPostgres.executor": "Run",
+    "Application.SUPABASE_DB-URL.executor": "Run",
     "Application.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -59,7 +59,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PruebaConexionPostgres">
     <configuration name="PruebaConexionFirestore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="GOOGLE_APPLICATION_CREDENTIALS" value="C:\Users\Lab3\Desktop\distrisalva\distrisalva-app.json" />
@@ -76,8 +76,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PruebaConexionPostgres" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SUPABASE_DB_URL" value="jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres?user=postgres.nejbbjbpvvjmxkuzvhdj&amp;password=Zpbmsnren7MrcX4D&amp;sslmode=require" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="sv.edu.utec.app.PruebaConexionPostgres" />
+      <module name="poc-mongo-atlas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sv.edu.utec.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SUPABASE_DB-URL" type="Application" factoryName="Application">
+      <envs>
+        <env name="jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres?user" value="postgres.nejbbjbpvvjmxkuzvhdj&amp;password=Zpbmsnren7MrcX4D&amp;sslmode=require" />
+      </envs>
+      <module name="poc-mongo-atlas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <envs>
+        <env name="jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres?user" value="postgres.nejbbjbpvvjmxkuzvhdj&amp;password=Zpbmsnren7MrcX4D" />
+      </envs>
+      <module name="poc-mongo-atlas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SUPABASE_DB-URL" />
+      <item itemvalue="Application.PruebaConexionPostgres" />
+      <item itemvalue="Application.PruebaConexionFirestore" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PruebaConexionPostgres" />
         <item itemvalue="Application.PruebaConexionFirestore" />
       </list>
     </recent_temporary>
@@ -91,5 +131,15 @@
       <updated>1794149443235</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sv/edu/utec/datos/ConexionPostgres.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
